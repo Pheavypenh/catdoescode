@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(251, 185, 195);
+}
+
+body {
+  min-height: 100vh;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: Set the height as needed */
+  }
+
+  #home h1{
+    font-weight: bold;
+  }
+  
+  #home h1, #home p, #home ul {
+    margin: 0;
+    text-align: center;
+  }
+  
+  #home ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #home ul li {
+    margin-top: 10px;
+  }
+  #home p{
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  #home li{
+    border-radius: 10px;
+  }
+  #home li, i{
+    list-style: none;
+    background-color: white;
+    padding: 5px;
+    font-weight: 500;
+  }
+
+  .all-about-dev{
+    display: flex;
+    align-items: flex-start;
+
+  }
+  .left{
+    flex: 1;
+    flex-basis: 40%;
+    font-size: 12px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+ 
+
+  .right {
+    background-color: white;
+    flex: 1;
+    flex-basis: 60%;
+    width: 60%;
+    overflow-x: auto;
+    justify-content: right;
+    border-radius: 40px;
+    padding: 20px;
+    margin-right: 5%;
+}
+
+#course{
+    display: flex;
+    margin-top: 10%;
+
+}
+.course{
+    margin-top: 10%;
+    align-items: flex-start;
+}
+
+#course h2{
+  display: flex;
+  font-weight: bold; 
+  margin-left: 10% ;
+}
+.html{
+    flex: 1;
+    border: 1 solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);;
+    border-radius: 20px;
+}
