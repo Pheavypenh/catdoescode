@@ -2,10 +2,11 @@
 
 * {
   margin: 0;
+  color: white;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  background-color: rgb(251, 185, 195);
+  font-family: monospace;
+  background-color: #212529;
 }
 
 body {
@@ -98,3 +99,13 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);;
     border-radius: 20px;
 }
+.card {
+  height: 30%; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column; /* Ensures content is stacked vertically */
+}
+
+.card-body {
+  flex-grow: 1; /* Allows the body to take available space */
+}
+
