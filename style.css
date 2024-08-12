@@ -23,10 +23,12 @@ body {
 
   #home h1{
     font-weight: bold;
+    margin-top: -50px;
   }
-  
+  #home p{
+    margin-top: 10px;
+  }
   #home h1, #home p, #home ul {
-    margin: 0;
     text-align: center;
   }
   
@@ -47,7 +49,6 @@ body {
   }
   #home li, i{
     list-style: none;
-    background-color: white;
     padding: 5px;
     font-weight: 500;
   }
@@ -64,23 +65,26 @@ body {
     margin-left: 5%;
     margin-right: 5%;
   }
- 
-
-  .right {
-    background-color: white;
-    flex: 1;
-    flex-basis: 60%;
-    width: 60%;
-    overflow-x: auto;
-    justify-content: right;
-    border-radius: 40px;
-    padding: 20px;
-    margin-right: 5%;
+  pre {
+    white-space: pre; /* Ensures that whitespace is preserved */
+    overflow-x: auto; /* Allows horizontal scrolling */
 }
+
+
+.right {
+  background-color: white;
+  flex: 1;
+  flex-basis: 60%;
+  overflow-x: auto;
+  border-radius: 40px;
+  padding: 20px;
+  margin-right: 5%;
+}
+
 
 #course{
     display: flex;
-    margin-top: 30px;
+    margin-top: 5%;
 
 }
 .course{
@@ -88,11 +92,6 @@ body {
     align-items: flex-start;
 }
 
-#course h2{
-  display: flex;
-  font-weight: bold; 
-  margin-left: 10% ;
-}
 .html{
     flex: 1;
     border: 1 solid black;
@@ -108,6 +107,7 @@ body {
 .card-body {
   flex-grow: 1; /* Allows the body to take available space */
 }
+
 .app-footer__marquee {
   color: white;
   font-style: italic;
@@ -158,20 +158,14 @@ body {
 }
 
 .custom-carousel {
-  width: 100%; /* Adjust this value to your needs */
-  max-width: 800px; /* Adjust this value to your needs */
+  width: 90%; /* Adjust this value to your needs */
+  max-width: 1800px; /* Adjust this value to your needs */
   margin: 0 auto; /* Center the carousel horizontally */
 }
 
 .custom-carousel .carousel-inner img {
-  max-height: 600px; /* Adjust this value to control image height */
+  max-height: 1800px; /* Adjust this value to control image height */
   object-fit: cover; /* Ensures images cover the area properly */
-}
-
-.custom-carousel {
-  width: 50%;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .carousel-item {
