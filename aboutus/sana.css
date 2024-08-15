@@ -278,28 +278,6 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent 9%,
-      var(--paperstripes2) 9%,
-      var(--paperstripes2) 9.15%,
-      transparent 9.15%
-    ),
-    linear-gradient(
-      white 0%,
-      white 8%,
-      transparent 8%,
-      transparent 95%,
-      white 95%,
-      white 100%
-    ),
-    repeating-linear-gradient(
-      white 0px,
-      white 30px,
-      var(--paperstripes1) 30px,
-      var(--paperstripes1) 31px
-    );
     border-radius: 2px;
     margin-right: 60px;
     margin-left: 60px;
@@ -307,10 +285,10 @@
     padding-bottom: 40px;
   }
   #projects .title {
-    color: black;
+    color: white;
     font-size: 50px;
     margin-top: 10px;
-    font-family: "Dancing Script", "Roboto", sans-serif;
+    font-family: monospace;
     margin-bottom: 60px;
   }
   #tiles {
