@@ -411,3 +411,81 @@ a {
     margin-top: 10px;
   }
 }
+/* Basic styling */
+.team-intro {
+  display: flex;
+  flex-wrap: wrap; /* Allows elements to wrap in smaller screens */
+  align-items: flex-start; /* Align items to the start of the flex container */
+  gap: 20px; /* Space between the items */
+  font-size: 15px;
+}
+
+.team-image {
+  flex: 1; /* Allows the image container to grow */
+  max-width: 100%; /* Prevents overflow */
+}
+
+.team-image h2 {
+  margin: 0; /* Resets margin for consistency */
+}
+
+.team-description {
+  margin-top: 80px;
+  flex: 2; /* Allows the text container to take more space */
+  max-width: 100%; /* Prevents overflow */
+  margin-right: 8%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-intro {
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items */
+  }
+
+  .team-image, .team-description {
+    text-align: center; /* Centers text inside the containers */
+    max-width: 100%; /* Prevents overflow */
+  }
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all-about-dev {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap */
+  gap: 20px; /* Space between the items */
+}
+
+.left {
+  flex: 1; /* Allows the left container to grow */
+  max-width: 100%; /* Prevents overflow */
+}
+
+.right {
+  flex: 2; /* Allows the right container to take more space */
+  max-width: 100%; /* Prevents overflow */
+  overflow-x: auto; /* Adds horizontal scrollbar if content overflows */
+  background-color: white; /* Ensure background color */
+  padding: 10px; /* Add padding */
+}
+
+/* Ensure the pre and code tags handle overflow correctly */
+pre {
+  white-space: pre; /* Preserve whitespace and formatting */
+  overflow-x: auto; /* Adds horizontal scrollbar */
+  background-color: white; /* Ensure background color */
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add padding for better readability */
+  max-width: 100%; /* Prevents overflow */
+  word-wrap: break-word; /* Allows content to break if necessary */
+}
+
+code {
+  display: block; /* Ensures that the code block is displayed properly */
+}
