@@ -200,32 +200,32 @@
   .progress-bar:nth-of-type(7) {
     background: linear-gradient(
       90deg,
-      rgb(239, 227, 0) 9%,
-      transparent 9%,
+      rgb(239, 227, 0) 70%,
+      transparent 70%,
       transparent 100%
     )
   }
   .progress-bar:nth-of-type(7):before {
-    content: "9%";
+    content: "70%";
   }
   .progress-bar:nth-of-type(9) {
     background: linear-gradient(
       90deg,
       rgb(137, 211, 226) 0%,
-      rgb(64, 189, 214) 21%,
-      transparent 21%,
+      rgb(64, 189, 214) 80%,
+      transparent 80%,
       transparent 100%
     )
   }
   .progress-bar:nth-of-type(9):before {
-    content: "21%";
+    content: "80%";
   }
   .subtitle-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  .fi-brands-python {
+  .fi-brands-python, .fa-puzzle-piece, .fa-mug-hot{
     font-size: 18px;
     position: absolute;
     padding-left: 19px;
@@ -246,8 +246,7 @@
     font-size: 45px;
     height: 45px;
     color: white;
-    border: 10px solid var(--iconcolor1);
-    background-color: var(--iconcolor1);
+    background-color: black;
     border-radius: 50px;
   }
   #profile-link:hover {
