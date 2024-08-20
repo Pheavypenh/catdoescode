@@ -153,6 +153,38 @@ body {
 .u-marquee__content > * {
   white-space: nowrap;
 }
+/* .back-button{
+  font-family: monospace;
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  font-size: 20px;
+  color: black;
+} */
+/* .head{
+  text-align: center;
+
+}
+.text{
+  margin-top: 30px;
+  margin-left: 450px;
+} */
+/* .course-container {
+  text-align: left;
+  padding: 20px;
+}
+.logo-container {
+  margin-top: 30px;
+  text-align: left;
+}
+.logo {
+  width: 128px;
+  height: 128px;
+} */
+
 
 @keyframes marquee {
   0% {

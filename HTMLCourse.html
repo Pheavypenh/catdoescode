@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> HTMLCourse Page</title>
   <link ink rel="icon" type="image/png" href="/picture/cp.png" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="course.css">
   <link rel="stylesheet" href="/test/test.css">
   r
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,62 +16,163 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-    <body style="background-color: black;">
-        <div class="bg-animation">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="stars4"></div>
-        </div>
-      
-        <nav class="navbar navbar-expand-lg navbar-light p-4">
-          <div class="container-fluid">
-            <img src="/picture/logo__1_-removebg-preview.png" alt="brand" style="max-width: 5%; height: auto;">
-            <a class="navbar-brand text-white fs-4" href="#" style="font-weight: bold">CatDoesCode</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-              style="border-color: white;">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                </path>
-              </svg>
-            </button>
-            <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white active" aria-current="page" href="#course">Courses</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white active" aria-current="page" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white active" aria-current="page" href="#about-us">About us</a>
-                  </li>
-                </ul>
-                <button class="btn register" style="
+
+<body style="background-color: black;">
+  <div class="bg-animation">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="stars4"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light p-4">
+    <div class="container-fluid">
+      <img src="/picture/logo__1_-removebg-preview.png" alt="brand" style="max-width: 5%; height: auto;">
+      <a class="navbar-brand text-white fs-4" href="#" style="font-weight: bold">CatDoesCode</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="border-color: white;">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+          </path>
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="#course">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="#about-us">About us</a>
+          </li>
+        </ul>
+        <button class="btn register" style="
                   background-color: rgb(27, 88, 193);
                   color: white;
                   border: 1px solid rgb(27, 88, 193);
                   border-radius: 5px;
                 ">Register</button>
-                <button class="btn login" style="
+        <button class="btn login" style="
                   margin-right: 40px;
                   margin-left: 20px;
                   background-color: white;
                   color: rgb(27, 88, 193);
                 ">Log In</button>
-              </div>
+      </div>
+    </div>
+  </nav>
+  <section>
+
+
+
+    </head>
+
+    <body style="background-color: black;">
+      <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+      </div>
+      <header>
+
+        <h1>Fundamentals of HTML</h1>
+        <div class="share-support">
+          <p>Sharing is caring ☝️</p>
+          <p>Support us: <a href="#">www.akb.aba.kh</a></p>
+          <a href="index.html" class="back-button">
+            ← Back
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="course-info">
+
           </div>
-        </nav>
-        <section>
-            <h1> Welcome to HTML Course</h1>
-            <p>Please enjoy learning the course we offer!</p>
-            
+          <div class="logo">
+            <img src="picture/HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo">
+            <h1><strong>HTML</strong></h1>
+          </div>
+          </div>
+          <div class="stats">
+            <p>Enrolled: 567</p>
+            <p>Lessons: 13</p>
+            <p>Duration: 3:34:45</p>
+            <p>Rating: ⭐⭐⭐⭐⭐</p>
+          </div>
         </section>
-</body>
+
+        <section class="course-objectives">
+          <h2>Course Objectives</h2>
+          <ul>
+            <li>Learn CSS for styling and JavaScript for interactivity.</li>
+            <li>Enhance websites with frameworks like Bootstrap, React, or Angular.</li>
+            <li>Explore server-side languages like PHP or Python.</li>
+            <li>These skills prepare you for roles like front-end or full-stack developer.</li>
+          </ul>
+        </section>
+
+        <section class="course-overview">
+          <h2>Introduction to HTML</h2>
+          <img src="picture/introduction-HTML-web-og-v1.webp" alt="Introduction to HTML Course Overview">
+        </section>
+
+        <section class="lesson-list mt-5">
+          <h2>Lesson List</h2>
+          <div class="lesson-item">
+            <h3>Lesson 1</h3>
+            <p>Date: March 1, 2024</p>
+            <p>Duration: ⏰ 06:20</p>
+            <h4>What is HTML?</h4>
+            <p>Introduction to HTML and its role in web development.</p>
+          </div>
+          <div class="lesson-item">
+            <h3>Lesson 2</h3>
+            <p>Date: March 1, 2024</p>
+            <p>Duration: ⏰ 06:20</p>
+            <h4>HTML Structure</h4>
+            <p>Understanding the basic structure of an HTML document.</p>
+          </div>
+          <div class="lesson-item">
+            <h3>Lesson 3</h3>
+            <p>Date: March 1, 2024</p>
+            <p>Duration: ⏰ 06:20</p>
+            <h4>HTML Elements</h4>
+            <p>Learning about various HTML elements and their usage.</p>
+          </div>
+          <div class="lesson-item">
+            <h3>Lesson 4</h3>
+            <p>Date: March 1, 2024</p>
+            <p>Duration: ⏰ 06:20</p>
+            <h4>HTML Elements</h4>
+            <p>Learning about various HTML elements and their usage.</p>
+          </div>
+          <div class="lesson-item">
+            <h3>Lesson 5</h3>
+            <p>Date: March 1, 2024</p>
+            <p>Duration: ⏰ 06:20</p>
+            <h4>HTML Elements</h4>
+            <p>Learning about various HTML elements and their usage.</p>
+        </div>
+        </section>
+
+        <footer class="mt-5">
+          <a href="comment.html" class="comment-button">Leave a comment here!</a>
+          
+          <p class="mt-5">Copyright2024</p>
+          <p>all right reserve by krochchmar.com</p>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top">⬆️ Back to Top</a>
+    </body>
+
 </html>
