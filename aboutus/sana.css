@@ -504,9 +504,9 @@
   }
   
   /* MEDIA */
-  
+   
   @media only screen and (max-width: 1020px) {
-    #projects {
+    #projects,#sub-grid  {
       margin-right: 10px!important;
       margin-left: 10px!important;
     }
