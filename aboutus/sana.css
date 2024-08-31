@@ -527,14 +527,14 @@ footer {
 @media only screen and (max-width: 800px) {
   #welcome-section {
     height: 1050px!important;
-    margin-bottom: 200px!important;
+    margin-bottom: 0px!important;
   }
   .grid {
     flex-direction: column!important;
     align-items: center!important;
   }
   .personal-info {
-    margin-bottom: 0px!important;
+    margin-bottom: 30px!important;
   }  
 }
 @media only screen and (max-width: 600px) {
