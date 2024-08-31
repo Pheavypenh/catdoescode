@@ -17,6 +17,9 @@
   * {
     font-family: monospace;
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   a {
@@ -502,77 +505,67 @@
       padding-bottom: 12px;
     }
   }
+  /* Media Queries */
+@media only screen and (max-width: 1020px) {
+  #projects {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  #tiles {
+    grid-template-columns: 1fr;
+  }
   
-  /* MEDIA */
-   
-  @media only screen and (max-width: 1020px) {
-    #projects  {
-      margin-right: 10px!important;
-      margin-left: 10px!important;
-    }
-    #tiles {
-      gap: 5px 5px!important;
-    }
-  
+  #projects .title {
+    margin-bottom: 20px;
   }
-  @media only screen and (max-width: 840px) {
-    #tiles {
-      grid-template-columns: auto!important;
-      gap: 20px 0px!important;
-    }
-    #projects .title {
-      margin-bottom: 20px!important;
-    }
+}
+
+@media only screen and (max-width: 800px) {
+  #welcome-section {
+    padding-bottom: 80px;
   }
-  @media only screen and (max-width: 800px) {
-    #welcome-section {
-      height: 1050px!important;
-      margin-bottom: 200px!important;
-      position: relative;
-    }
 
-    #projects {
-      margin-top: 200px!important;
-    }
-
-    /* #welcome-section .grid {
-      margin-top: 200px;
-    } */
-
-    .grid {
-      flex-direction: column!important;
-      align-items: center!important;
-    }
-    .personal-info {
-      margin-bottom: 0px!important;
-    }  
+  #projects {
+    padding-top: 80px;
   }
-  @media only screen and (max-width: 600px) {
-    #welcome-section {
-      height: 1050px!important;
-      margin-bottom: 200px!important;
-      position: relative;
-    }
 
-    #navbar {
-      justify-content: center!important;
-      align-items: center!important;
-    }
-    #projects {
-      margin-top: 200px!important;
-      margin-right: 0px!important;
-      margin-left: 0px!important;
-    }
-    .media {
-      font-size: 19px!important;
-    }
-    #contact h1 {
-      font-size: 28px!important;
-    }
-    h4 {
-      font-size: 15px!important;
-    }
-    .copyright {
-      font-size: 11px!important;
-    }
+  .grid {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .personal-info {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .media {
+    font-size: 19px;
+  }
+
+  #contact h1 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+}
