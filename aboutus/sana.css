@@ -528,7 +528,17 @@
     #welcome-section {
       height: 1050px!important;
       margin-bottom: 200px!important;
+      position: relative;
     }
+
+    #projects {
+      margin-top: 200px!important;
+    }
+
+    /* #welcome-section .grid {
+      margin-top: 200px;
+    } */
+
     .grid {
       flex-direction: column!important;
       align-items: center!important;
@@ -538,11 +548,18 @@
     }  
   }
   @media only screen and (max-width: 600px) {
+    #welcome-section {
+      height: 1050px!important;
+      margin-bottom: 200px!important;
+      position: relative;
+    }
+
     #navbar {
       justify-content: center!important;
       align-items: center!important;
     }
     #projects {
+      margin-top: 200px!important;
       margin-right: 0px!important;
       margin-left: 0px!important;
     }
