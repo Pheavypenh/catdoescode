@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./10.Colors.css">
+    <link rel="stylesheet" href="./Background.css"> <!-- Link to the external CSS file -->
+    <link rel="icon" type="image/png" href="/picture/html.png">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div> 
+
+    <!-- Back Button -->
+    <button class="btn btn-primary back-button">← Back</button>
+
+    <!-- Main Container -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Video Player Section -->
+            <div class="col-lg-8 col-md-12 video-player">
+                <div class="video-thumbnail">
+                    <video id="videoPlayer" src=".//HTML images/HTML - Colors - W3Schools.com.mp4" controls></video>
+                </div>
+            </div>
+
+            <!-- Chapters Section -->
+            <div class="col-lg-4 col-md-12 chapters">
+                <h3>Chapters: HTML Colors</h3>
+                <div class="chapter-list">
+                    <!-- List of Chapters -->
+                    <a href="./1.html intro.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Introduction - W3Schools.com.mp4">1. Introduction</a>
+                    <a href="./2.editors.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Editors - W3Schools.com.mp4">2. HTML Editors</a>
+                    <a href="./3.element.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Elements - W3Schools.com.mp4">3. HTML Elements</a>
+                    <a href="./4.Attribute.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Attributes - W3Schools.com.mp4">4. HTML Attribute</a>
+                    <a href="./5.Headings.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Headings - W3Schools.com.mp4">5. HTML Heaading</a>
+                    <a href="./6.Paragraphs.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Paragraphs - W3Schools.com.mp4">6. HTML Paragraphs</a>
+                    <a href="./7.Styles.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Styles - W3Schools.com.mp4">7. HTML Styles</a>
+                    <a href="./8.Formatting.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Formatting - W3Schools.com.mp4">8. HTML Formmating</a>
+                    <a href="./9.Comments.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Comments - W3Schools.com.mp4">9. HTML Comments</a>
+                    <a href="./10.Colors.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Colors - W3Schools.com.mp4">10. HTML Colors</a>
+                    <a href="./11.html-css.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - CSS - W3Schools.com.mp4">11. HTML CSS</a>
+                    <a href="./12.links.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - CSS - W3Schools.com.mp4">12. HTML Links</a>
+                    <a href="./13.images.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Images - W3Schools.com.mp4">13. HTML Images</a>
+                    <a href="./14.Table.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Images - W3Schools.com.mp4">14. HTML Table</a>
+                    <a href="./15.list.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Lists - W3Schools.com.mp4">15. HTML List</a>
+                    <a href="./16.block and inline.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Block and Inline - W3Schools.com.mp4">16. Block and Inline</a>
+                    <a href="./17.class.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Classes - W3Schools.com.mp4">17. HTML Classes</a>
+                    <a href="./18.id.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Id - W3Schools.com.mp4">18. HTML Id</a>
+                    <a href="./19.Iframe.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Iframes - W3Schools.com.mp4">19. HTML Iframe</a>
+                    <a href="./20.javascript.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - JavaScript - W3Schools.com.mp4">20. HTML JavaScript</a>
+                    <a href="./21.head.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Head - W3Schools.com.mp4">21. HTML Head</a>
+                    <a href="./22.form.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Forms - W3Schools.com.mp4">22. HTML forms</a>
+                    <a href="./23.blooper.html" class="btn btn-outline-light chapter" data-video="./HTML vdopage/HTML images/HTML - Bloopers - W3Schools.com.mp4">23. Bloopers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.chapter').forEach(chapter => {
+            chapter.addEventListener('click', function() {
+                const videoSrc = this.getAttribute('data-video');
+                document.getElementById('videoPlayer').src = videoSrc;
+                document.getElementById('videoPlayer').play();
+            });
+        });
+    </script>
+</body>
+</html>
