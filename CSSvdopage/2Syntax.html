@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. CSS Syntax</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./2Syntax.css">
+    <link rel="stylesheet" href="./background.css"> <!-- Link to the external CSS file -->
+    <link rel="icon" type="image/png" href="/picture/css.png">
+    <link rel="icon" type="image/png" href="/cdc/picture/csslogo.png">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div> 
+
+    <!-- Back Button -->
+    <nav>
+        <div>
+            <a href="/cdc/course/Css.html" class="back-button">← Back</a>
+          </div>
+        </nav>
+        
+        <style>
+          .back-button {
+            display: inline-block;
+            background-color: rgb(6, 6, 141);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            position: absolute;
+            left: 18px;
+            top: 20px;
+            z-index: 1;
+          }
+          .back-button:hover {
+      text-decoration: none;
+    }
+        </style>
+    
+
+
+    <!-- Main Container -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Video Player Section -->
+            <div class="col-lg-8 col-md-12 video-player">
+                <div class="video-thumbnail">
+                    <video id="videoPlayer" src="./CSSImages/Syntax.mp4" controls></video>
+                </div>
+            </div>
+
+            <!-- Chapters Section -->
+            <div class="col-lg-4 col-md-12 chapters">
+                <h3>Chapters: Syntax</h3>
+                <div class="chapter-list">
+                    <!-- List of Chapters -->
+                    <a href="./1Introduction.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/Introduction.mp4">1. Introduction</a>
+                    <a href="./2Syntax.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/Syntax.mp4">2. Syntax</a>
+                    <a href="./3simpleselectors.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/SimpleSelectors.mp4">3. Simple selectors</a>
+                    <a href="./4howtoconnectcsstohtml.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/HowtoaddCSStoHTML.mp4">4. How to add CSS to HTML</a>
+                    <a href="./5comments.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/Comments.mp4">5. Comments</a>
+                    <a href="./6colorsintroduction.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/ColorsIntroduction.mp4">6. Color Introduction</a>
+                    <a href="./7colorRGB&RGBA.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/ColorsRGB&RGBA.mp4">7. Colors RGB & RGBA</a>
+                    <a href="./8colorhex.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/ColorsHex.mp4">8. Color Hex</a>
+                    <a href="./9colorHSL.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/ColorsHSL.mp4">9. Color HSL</a>
+                    <a href="./10backgroundcolor.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/BackgroundColor.mp4">10. Background Colors</a>
+                    <a href="./11backgroundImages.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/BackgroundImage.mp4">11. Background Images</a>
+                    <a href="./12backgroundrepeat&position.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/BackgroundRepeatAndPosition.mp4">12. Background Repeat and Position</a>
+                    <a href="./13backgroundattactment.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/BackgroundAttachment.mp4">13. Background Attachment</a>
+                    <a href="./14backgroundshorthand.html" class="btn btn-outline-light chapter" data-video="/cdc/CSSvdopage/CSSImages/BackgroundShorthand.mp4">14. Background Shorthand</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.chapter').forEach(chapter => {
+            chapter.addEventListener('click', function() {
+                const videoSrc = this.getAttribute('data-video');
+                document.getElementById('videoPlayer').src = videoSrc;
+                document.getElementById('videoPlayer').play();
+            });
+        });
+    </script>
+</body>
+</html>

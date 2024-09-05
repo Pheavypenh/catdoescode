@@ -69,6 +69,7 @@
     margin: 0 auto; /* Center the section horizontally within its container */
     max-width: 800px; /* Optional: Limit the width of the section */
     padding: 20px; /* Optional: Add padding for spacing */
+    
   }
   .course-overview {
     margin-top: 0;
@@ -83,6 +84,7 @@
       margin-right: auto;
       width: 80%;
       border-radius: 15px;
+    
     }
   
   /* Lesson List */
@@ -96,6 +98,10 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .lesson-item a {
+      text-decoration: none; /* Removes the underline */
+  }
+  
   }
   .lesson-item {
     display: flex;
@@ -240,6 +246,7 @@
   
     .lesson-item h2, .lesson-item h3 {
       font-size: 18px;
+      
     }
   
     button {
